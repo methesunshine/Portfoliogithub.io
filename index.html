@@ -1,0 +1,200 @@
+<html>
+    <head lang="en">
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet", href="Port.css">
+        <title>
+            WELCOME TO MY WEBSITE 
+        </title>
+    </head>
+    <script src="https://kit.fontawesome.com/da920a8772.js" crossorigin="anonymous"></script>
+    <boby>
+        <div id="first01">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#first01">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">EXPERTISE</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>
+                    Hello,<span>
+                        <br>
+                    I'm Anjali Kumar</span><br>
+                    </h1>
+                <p>And I'm a Full Stack Developer</p>
+                </div>
+            </div>
+        </div>
+<!--------------------------------------------------------------------------------------ABOUT---------------------------------------------------------------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Abtme.png" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">
+                            About Me
+                        </h1>
+                        <p>
+                        This is my offical website. Here ,I mentioned my hobbies.
+                        <br>And my expertise is to create a Website Design and Graphics Design.
+                        <br>And I'm passionate about web development domains and 
+                        <br>software technology to develop specific project features. 
+                        <br>And I also used Github for code and host .
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('educations')">Educations </p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Design</span><br>Website /Web Design Portfolio</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educations">
+                            <ul>
+                                <li><span>Graduation</span><br>B.Tech.ECE</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Full Stacks Web Development</span>
+                                    <br>Ethical EduFabrica Pvt.Ltd</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------------------Work-------------------------------------------------------------------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Expertise</h1>
+                    <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p >website/Portfolio</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Graphics Design</h2>
+                        <p>Logo Design</p>
+                    </div>
+            </div>
+        </div>
+<!----------------------Portfolio-------------------------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Hobbies</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Travelpic.png">
+                        <div class="layer">
+                            <h3> Travel</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/music.png">
+                        <div class="layer">
+                            <h3>Music</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/flo.png">
+                        <div class="layer">
+                            <h3>Photography</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Uploading Soon</a>
+            </div>
+        </div>
+<!---------------------------------------------------------------contact--------------------------------------------------------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>anjalikumar666@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/anjali-kumar-472451212"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://instagram.com/me_the_sunshine__?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href="https://github.com/methesunshine"><i class="fa-brands fa-github"></i></i></a>
+                        </div>
+                        <a href="mailto:anjalikumar666@gmail.com" class="btn btn2">Reach Me</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type=" text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Turn Ideas into Reality <i class="fa-solid fa-heart"></i></p>
+
+            </div>
+        </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzOdUhH5qIPLTTN0I-Jj5WLyMvzPtWwGCkF_4Ud80_OgpNlSZ8wiQhoRh_c499jgiK90w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully :)"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    </boby>
+</html>
